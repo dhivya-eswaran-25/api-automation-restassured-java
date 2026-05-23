@@ -1,7 +1,8 @@
 package config;
-import org.aeonbits.owner.Config;
+import org.aeonbits.owner.Config.*;
+import org.aeonbits.owner.Config.Sources;
 
-@Config.Sources({"classpath:config.properties"})
+@Sources({"classpath:config.properties"})
 public interface Configuration extends Config {
     @Key("base.url")
     String baseUrl();
