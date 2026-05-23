@@ -14,7 +14,7 @@ public class BaseTest {
         config = ConfigFactory.create(Configuration.class);
         requestSpec = new RequestSpecBuilder()
                 .setBaseUri(config.baseUrl())
-                .addHeader("x-api-key","reqres-free-v1")
+                //.addHeader("x-api-key","reqres-free-v1")
                 .setContentType("application/json")
                 .build();
     }
